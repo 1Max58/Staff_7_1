@@ -5,7 +5,7 @@ public interface Salary {
     public default double salaryForOvertimeKorsun64068(double hours, double rate) {
         return 0;
     }
-    public static boolean shouldReceiveBonus(int yearsOfExpreience) {
+    public static boolean shouldReceiveBonusKorsun64068(int yearsOfExpreience) {
         return yearsOfExpreience >= 10;
     }
 }
