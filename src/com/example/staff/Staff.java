@@ -2,7 +2,7 @@ package com.example.staff;
 
 import java.util.Scanner;
 
-public class Staff extends Person {
+public class Staff extends Person implements Salary {
     private String educationKorsun64068;
     private String positionKorsun64068;
 
@@ -18,5 +18,10 @@ public class Staff extends Person {
     public void print1Korsun64068() {
         printKorsun64068();
         System.out.println("Staff: " + educationKorsun64068 + ", " + positionKorsun64068);
+    }
+
+    @Override
+    public double salaryToPayKorsun64068(double hours, double rate) {
+        return hours * rate;
     }
 }
